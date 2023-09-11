@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4"><h3>Prime Number</h3></div>
+        <div class="col-4">
+
+            <input type="text" [(ngModel)]="numberToCheck">
+
+            <div>
+                <button class="btn btn-info mt-4" (click)="isPrime(numberToCheck)">Check prime Number or not</button>
+            </div>
+
+            <p *ngIf="isPrime(numberToCheck)">{{numberToCheck}} is a Prime Number</p>
+            <p *ngIf="!isPrime(numberToCheck)">{{numberToCheck}} is not a Prime Number</p>
+
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
